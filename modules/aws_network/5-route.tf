@@ -29,7 +29,7 @@ resource "aws_route_table" "private_route_table" {
 
   # Route for Internet traffic via NAT
   route {
-    cidr_block = "0.0.0.0/0"                  # All traffic to the Internet
+    cidr_block = "0.0.0.0/0"             # All traffic to the Internet
     gateway_id = aws_nat_gateway.main.id # Route to the IGW
   }
 
